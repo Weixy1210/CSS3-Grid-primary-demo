@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grid-demo</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{ margin: 0; }
+			#wrapper{
+				display: grid;
+				grid-template-columns: 1fr 0fr 0fr 2fr;
+				grid-template-rows: 1fr 0fr 0fr 3fr;
+				grid-column-gap: 20px;
+				grid-row-gap: 10px;
+				background-color: #eee;
+			}
+			.part{
+				border: 1px solid green;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- 第一行 -->
+			<div class="part">A</div>
+			<div class="part">B</div>
+			<div class="part"></div>
+			<div class="part"></div>
+			<!-- 第二行 -->
+			<div class="part">A</div>
+			<div class="part"></div>
+			<div class="part"></div>
+			<div class="part"></div>
+			<!-- 第三行 -->
+			<div class="part"></div>
+			<div class="part"></div>
+			<div class="part"></div>
+			<div class="part"></div>
+			<!-- 第四行 -->
+			<div class="part"></div>
+			<div class="part"></div>
+			<div class="part"></div>
+			<div class="part"></div>
+		</div>
+	</body>
+</html>

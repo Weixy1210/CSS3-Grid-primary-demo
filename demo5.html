@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grid-demo</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{ margin: 0; }
+			#wrapper{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr 0fr;
+				grid-column-gap: 20px;
+				grid-row-gap: 10px;
+				background-color: #eee;
+			}
+			.part{
+				padding: 5px;
+				border: 1px solid green;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="part">A</div>
+			<div class="part">B</div>
+			<div class="part">C</div>
+			<div class="part">D</div>
+		</div>
+	</body>
+</html>
